@@ -4,10 +4,10 @@ def turn_count(board)
   counter = 0
   board.each do |cell_value|
     if cell_value == 'X' || cell_value == 'O'
-      turn_num = counter += 1
-      puts "Turn number #{turn_num}"
-    elsif turn_num > 9
-      return turn_num
+      counter += 1
+      puts "Turn number #{counter}"
+    elsif counter > 9
+      return counter
     end
   end
 end
