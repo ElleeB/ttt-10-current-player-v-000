@@ -3,14 +3,14 @@ board = ["O", " ", " ", "X", " ", " ", " ", "X", " "]
 def turn_count(board)
   counter = 0
   board.each do |cell_value|
-    if cell_value == 'X' || cell_value == 'O' && counter <= 9
-      turn_num = counter += 1
+    if cell_value == 'X' || cell_value == 'O'
+      counter += 1
       puts "Turn number #{counter}"
-    else
-      return turn_num
     end
   end
+  return counter
 end
+
 
 #while counter <=9
 
