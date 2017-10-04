@@ -6,7 +6,7 @@ def turn_count(board)
     if cell_value == 'X' || cell_value == 'O'
       turn_num = counter += 1
       puts "Turn number #{turn_num}"
-    elsif num > 9
+    elsif turn_num > 9
       return turn_num
     end
   end
